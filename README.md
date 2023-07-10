@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Frist React form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frist React form
 
-## Available Scripts
+## 專案畫面 Presentation Project
 
-In the project directory, you can run:
+![MyImage](https://github.com/akedaikuki/MyFirstReactForm/blob/main/Photo/form.PNG)
 
-### `npm start`
+### 專案開發環境 Development Environment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- node.js 環境 node.js environment
+- React.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 操作
 
-### `npm test`
+- Step1. 確認安裝 node.js 與 npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Step2. 下載專案
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/akedaikuki/MyFirstReactForm.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Step3. 終端機輸入
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Step4. 執行程式
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Step5. 確認訊息是否如下
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+You can now view ac-shop in the browser.
 
-## Learn More
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.102:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Note that the development build is not optimized.
+To create a production build, use npm run build.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+webpack compiled successfully
+```
 
-### Code Splitting
+- Step6. 瀏覽器輸入
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+- Step7. 如需暫停伺服器，請切換至終端機並且
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+ctrl+c
+control+c
+```
 
-### Making a Progressive Web App
+##### 開發工具 Development tools
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React 18.2.0

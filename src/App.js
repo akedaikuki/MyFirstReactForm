@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+function ReactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
-function App() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setName(e.target.name.value);
+    setEmail(e.target.email.value);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>My First React Form</h1>
+        <form className="fromInput" onSubmit={(e) => handleSubmit(e)}>
+          <div className="inputName">Name:</div>
+          <input name="name" placeholder="name" />
+          <br />
+          <div className="inputEmail">Email:</div>
+          <input name="email" placeholder="email" />
+          <br />
+          <button className="submitButton">Submit</button>
+        </form>
+      </div>
+      <div className="container">
+        <h3>Name: {name}</h3>
+        <h3>Email: {email}</h3>
+      </div>
     </div>
   );
 }
-
-export default App;
+export default ReactForm;
