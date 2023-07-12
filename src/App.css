@@ -1,40 +1,19 @@
 .App {
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark {
+  background-color: #333;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light {
+  background-color: #fff;
+  color: #333;
 }
 
 *,
@@ -74,4 +53,76 @@ input {
   border-radius: 4px;
   cursor: pointer;
   border: 0;
+}
+
+.switch {
+  position: relative;
+  top: -470px;
+}
+
+img {
+  width: 30px;
+  margin-right: 8px;
+  animation: img-spin infinite 20s linear;
+}
+
+@keyframes img-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.F {
+  --color: #2ecce0;
+}
+
+.O {
+  --color: #fccf31;
+}
+
+.R {
+  --color: #fa7c49;
+}
+
+.M {
+  --color: #2575fc;
+}
+
+.form__neon {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form__neon > span {
+  animation: from 5s steps(1) infinite;
+}
+
+@keyframes from {
+  5%,
+  9%,
+  13%,
+  25% {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+  }
+  7%,
+  11%,
+  15%,
+  19%,
+  30%,
+  100% {
+    color: var(--color);
+    text-shadow: 0px 0px 5px var(--color), 0px 0px 20px var(--color),
+      0px 0px 50px var(--color), 0px 0px 70px var(--color);
+  }
+}
+
+span.F_light,
+span.O_light,
+span.R_light,
+span.M_light {
+  color: #333;
+  animation: none;
 }
